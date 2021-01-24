@@ -45,7 +45,7 @@ This project implements a log using Log4J as framework and sends them to Splunk 
 
 * Access the jibana container by the web using this URL: http://localhost:5601/
 
-* In the right menu choose Kibana > Overview
+* In the right menu choose Kibana > Discover
 
 * Now just execute the application to send a log
 
