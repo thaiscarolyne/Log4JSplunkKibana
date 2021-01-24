@@ -1,1 +1,1 @@
-C:\Users\Thais\Downloads\Log4JSplunk\build\classes\kotlin\main\TestingLogger.class;C:\Users\Thais\Downloads\Log4JSplunk\build\classes\kotlin\main\TestingLoggerKt.class
+C:\Users\Thais\Downloads\Log4JSplunkKibana\build\classes\kotlin\main\TestingLogger.class;C:\Users\Thais\Downloads\Log4JSplunkKibana\build\classes\kotlin\main\TestingLoggerKt.class
