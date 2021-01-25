@@ -56,6 +56,7 @@ This project implements a log using Log4J as framework and sends them to Splunk 
 
 * https://dev.splunk.com/enterprise/docs/devtools/java/logging-java/
 * https://dev.splunk.com/enterprise/docs/devtools/java/logging-java/howtouseloggingjava/enablelogtcpjava
+* https://splunk.github.io/docker-splunk/EXAMPLES.html#create-standalone-from-compose
 
 #### Kibana:
 
