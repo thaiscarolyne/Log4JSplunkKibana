@@ -31,12 +31,12 @@ This project implements a log using Log4J as framework and sends them to Splunk 
 #### log4j -> elastic search <- kibana 
 #### Elastic Search = Search and distributed analysis mecanism based on JSON
 #### Kibana = Shapes the data and presents to user
-#### (log4j send logs using HTTP appender, where we need to inform the type of data beeing transmited, in this case in JSON, and Kibana automatically search for logs in elastic search because it's set in the enviroment variables of kibana container (ELASTICSEARCH_URL and ELASTICSEARCH_HOSTS))
-#### Using this approach we send data directly to a node on elastic search cluster, you can use filebeat to write the logs between all the node on the cluster, it is more fault tolerant, because if one node goes down, the logs don't stop being writen (See mostafa site in references)
+#### (log4j send logs using HTTP appender, where we need to inform the type of data beeing transmited, in this case is JSON, and Kibana automatically search for logs in elastic search because it's set in the enviroment variables of kibana container (ELASTICSEARCH_URL and ELASTICSEARCH_HOSTS))
+#### Using this approach we send data directly to a node on elastic search cluster, you can use filebeat to write the logs in a file, and then it'll be distributed across the nodes on the cluster, it is more fault tolerant, because if one node goes down, the logs don't stop being writen (See mostafa site in references)
 
 * Run Git Bash in the root folder and execute this command to bring up the elastic search container: docker-compose up es01 -d
 
-    Obs.: If the es01 container doesn't bring up because of vm memory, you can run um cmd:
+    Obs.: If the es01 container doesn't bring up because of vm memory, you can run on cmd:
 
     * wsl -d docker-desktop
     * sysctl -w vm.max_map_count=262144
